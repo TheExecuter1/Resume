@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Mohd Fuzail} \\ \vspace{1pt}
+
+    \small \raisebox{-0.1\height}\faPhone\ 7210250444 ~ \href{mailto:siddiqui.fuzail1930@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{siddiqui.fuzail1930@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/fuzail-siddiqui-198481194/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/Fuzail}}  ~
+    \href{https://github.com/TheExecuter1}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Fuzail}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Guru Gobind Singh Indrapastha University}{Aug. 2019 -- Sept 2023}
+      {Bachelor of Technology in Information Technology}{New Delhi, India}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {\href{https://localwell.in/}{LocalWell}}{Dec 2023 -- Present}
+  {Senior Backend Engineer(Backend $|$ Infrastructure)}{Remote}
+  \resumeItemListStart
+    \resumeItem{Led \textbf{AWS cost optimization} initiatives, reducing cloud expenditure by \textbf{20\%} while maintaining system performance.}
+    \resumeItem{Developed a data migration orchestrator in Golang and Node.js, automating workflows and saving over\textbf{ 10 hours} of developer's manual effort weekly.}
+    \resumeItem{\textbf{Optimized client-facing APIs}, reducing average response time to \textbf{under 500 ms}.}
+    \resumeItem{\textbf{Architected and implemented} the backend for \textit{MedCart}, LocalWell’s D2C platform, leading development from scratch.}
+        \resumeItem{Maintained and monitored platform infrastructure, ensuring seamless scalability using the TIG stack}
+            \resumeItem{Designed and implemented innovative POCs, ranging from\textbf{ ML-driven solutions} to Golang-based monitoring services, to enhance platform observability and functionality.}
+    \resumeItem{\textbf{Managed, scaled, and monitored} the PostgreSQL database cluster, achieving a \textbf{~100\% reduction} in daily crash incidents and eliminating downtime, significantly improving system availability.}
+    \resumeItem{Provided \textbf{technical leadership} and \textbf{mentorship} while driving feature development alongside two junior developers.}
+  \resumeItemListEnd
+
+\vspace{-6mm}
+
+\resumeSubheading
+  {}{}
+  {Backend Engineer}{}
+  \resumeItemListStart
+    \resumeItem{Led the migration of APIs from Python(Flask) to Node.js, resulting in improved performance \& maintainability.}
+    \resumeItem{Key contributor in redesigning \href{https://drive.google.com/file/d/1XRRsgECoCF8LZstPu3XAlMPaB-yeh-vm/view?usp=sharing}{\textbf{Authentication}} to support role-based access, secure payments, and seamless user experience.}
+    \resumeItem{Improved the Master Data Management (MDM) pipeline, reducing junk and duplicate data by up to 5x and introducing safeguards to prevent further contamination.}
+  \resumeItemListEnd
+
+
+    
+    \resumeSubheading
+      {\href{}{MLabs}}{March 2023 -- Oct 2023}
+      {Software Engineer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Responsible for end-to-end development of software products based on client requirement.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {\href{https://app.alyve.health}{Alyve Health}}{July 2022 -- August 2023}
+      {Software Engineer Intern}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Engineered the backend of the comprehensive Health Analytics module utilizing PHP-Laravel and MySQL.}
+        \resumeItem{Oversaw MySQL database management and master data management responsibilities}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MedCart @ }LocalWell {(\textit{Hyperlocal D2C Medicine Shopping Platform})} $|$ \emph{Node.js, AWS, RabbitMQ, Postgres}}{}
+          \resumeItemListStart
+            \resumeItem{\textbf{Architected the system} and \textbf{designed the database} from scratch, delivering a successful beta release in 3 months.}
+            \resumeItem{Developed a \textbf{pharmacy allocation algorithm} that leveraged multiple metrics such as distance, stock availability, ratings, store timings etc to identify optimal candidate pharmacies based on order and customer details.}
+            \resumeItem{Built an\textbf{ event-driven framework} to trigger real-time actions in response to user and system events, enabling \textbf{decoupled} and \textbf{scalable service interactions}.}
+            \resumeItem{Developed a \textbf{push notification framework} to send real-time alerts to both customers and pharmacy owners.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Quick Scan @ }LocalWell {(\textit{OCR based medicine scanning feature})} $|$ \emph{Node.js, Python(Flask), Socket.io, Redis}}{}
+          \resumeItemListStart
+            \resumeItem{An \textbf{OCR-based} feature that eliminated the need for barcode gun, fully automating the medicine sale process}
+            \resumeItem{Used \textbf{MMOCR} with a custom inference layer to accurately extract batch details from medicine packaging.}
+            \resumeItem{Used \textbf{Socket.io} with \textbf{Redis}(to manage connections) to sync medicine details from mobile to desktop in real time}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Service Monitor @} LocalWell {(Multipurpose Monitoring Service)} $|$ \emph{Golang, Clickhouse, Postgres}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Go-based service from scratch to support \textbf{monitoring} and \textbf{observability} across the platform.}
+            \resumeItem{Implemented an \textbf{alerting system} to notify Slack when production services or databases experience downtime.}
+            \resumeItem{Built a smart \textbf{API logging solution} using ClickHouse to monitor endpoint \textbf{performance} and \textbf{variability}}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, Golang, Python, SQL, JavaScript, HTML/CSS, PHP} \\
+     \textbf{DevOps}{: AWS, Docker, Telegraf, Grafana, InfluxDb} \\
+     \textbf{Technologies/Frameworks}{: Node.js, Flask, Gin, GRPC, Playwright, Postgresql,Clickhouse,Redis, React.js, Django} \\
+          \textbf{CS Fundamenta}{: Object Oriented Programming, Data Structures and Algorithms, OS, Computer Networks, DBMS} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Google Developer Students Club}{Sept 2020 -- Sept 2022}{Team Lead - Machine Learning Team}{}
+%             \resumeItemListStart
+%                 \resumeItem{Key responsibilities included taking interviews, mentoring students, guiding projects, managing repositories.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
